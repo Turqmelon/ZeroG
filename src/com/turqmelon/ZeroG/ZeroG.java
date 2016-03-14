@@ -93,7 +93,7 @@ public class ZeroG extends JavaPlugin implements Listener {
                         break;
                 }
             }
-            return player.isSneaking() ? (grav*2) : grav;
+            return player.isSneaking() && grav != 1 ? (grav*2) : grav;
         }
         return 1;
     }
